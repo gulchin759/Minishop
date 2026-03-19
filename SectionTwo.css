@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 2vw;
+    text-align: center
+}
+
+.fa-star {
+    color: yellow;
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-left: 4rem;
+}
+
+.block {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    transition: transform 1.1s;
+    width: 80%;
+    font-weight: 700;
+
+
+}
+
+.block img {
+    width: 7rem;
+
+}
+
+.block:hover {
+    transform: scale(1.1);
+}
+
+.fa-dollar-sign {
+    color: green
+}
+
+.more-detal {
+    padding: 1rem;
+    background-color: rgb(243, 214, 240);
+    border-radius: 13px;
+    transition: 0.7s;
+}
+
+.block a {
+    text-decoration: none;
+    color: black;
+}
+
+.more-detal:hover {
+    background-color: rgb(129, 13, 118);
+    color: white;
+
+}
+
+#topsal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#Hideandshow {
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.old {
+    text-decoration: line-through;
+    color: gray;
+
+}
+
+.new {
+    color: white;
+}
+
+.point {
+
+    color: red;
+    border-radius: 40px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    .blocks {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+
+    .block {
+        width: 100%;
+        max-width: 280px;
+        padding: 1rem;
+    }
+
+    .block img {
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .price {
+        flex-direction: column;
+        gap: 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    #Hideandshow {
+        width: 85%;
+        padding: 0.8rem;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .blocks {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
+    .block {
+        width: 90%;
+        padding: 1.2rem;
+    }
+
+    .block img {
+        height: 180px;
+    }
+
+    #Hideandshow {
+        width: 40%;
+    }
+
+    .price {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

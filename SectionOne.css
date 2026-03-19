@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#SectionOne {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#Person img {
+    width: 100%;
+    z-index: -1;
+
+
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    position: absolute;
+    text-align: left;
+    gap: 0.7rem;
+
+
+}
+
+#slogan {
+    width: 44vw;
+    font-size: 5vw;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+
+}
+
+#detal {
+    font-size: 1.25vw;
+    width: 44vw;
+
+}
+
+#show-now {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 2.2rem;
+    padding: 0.6vw;
+    width: 13vw;
+    font-size: 1vw;
+
+}
+
+#numbers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-top: 1vw;
+
+}
+
+.num p:nth-child(1) {
+
+    font-size: 2.5vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.num p:nth-child(2) {
+
+    font-size: 1vw;
+    color: #241919c2;
+}
+
+.num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#star1 {
+    width: 9vw;
+    position: absolute;
+    right: 7vw;
+    top: 18vw;
+}
+
+#star2 {
+    width: 4vw;
+    position: absolute;
+    top: 41vw;
+    left: 45vw;
+}
+
+#Brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    padding: 0.9rem;
+}
+
+#Brands img {
+    width: 7vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 370px) and (max-width: 750px) {
+
+    #SectionOne {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F0F1;
+
+    }
+
+    #text {
+        position: static;
+        width: 100%;
+        padding: 2rem 1rem;
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+        order: 1;
+
+    }
+
+    #slogan {
+        width: 90%;
+        font-size: 2.5rem;
+    }
+
+    #detal {
+        width: 90%;
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    #show-now {
+        width: 80%;
+        padding: 1rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    #numbers {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .num p:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .num p:nth-child(2) {
+        font-size: 0.8rem;
+    }
+
+    #person {
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+
+    #star1 {
+        width: 40px;
+        right: 5%;
+        top: 50%;
+    }
+
+    #star2 {
+        width: 25px;
+        left: 10%;
+        top: 65%;
+    }
+
+    #Brands {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    #Brands img {
+        width: 80px;
+        filter: brightness(0) invert(1);
+    }
+}

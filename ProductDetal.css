@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.prod img {
+    width: 29vw;
+    background-color: black;
+    border-radius: 2rem;
+}
+
+.prod {
+    display: flex;
+    padding: 2vw;
+    text-align: left;
+    gap: 3vw;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.rating {
+    font-weight: 700;
+}
+
+.pricep {
+    display: flex;
+    gap: 2rem;
+}
+
+.oldp {
+    color: gray;
+    text-decoration: line-through;
+    font-weight: 800;
+}
+
+.newp {
+    color: black;
+    font-weight: 800;
+}
+
+.pointp {
+    color: red;
+    font-weight: 800;
+}
+
+.description {
+    font-size: 2vw;
+    color: gray
+}
+
+.counter {
+
+    background-color: gray;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 90px;
+    width: 9rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.counter div:nth-child(1) {
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    background-color: white;
+    width: 28px;
+    color: black;
+
+
+}
+
+.counter div:nth-child(3) {
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    background-color: white;
+    width: 28px;
+    color: black;
+
+}
+
+
+
+.addcart {
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+    text-align: center;
+    padding: 0.8rem;
+    width: 70%;
+    text-align: center;
+
+}
+
+.countandcart {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.reviw {
+    padding: 1rem;
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20rem;
+    margin: auto;
+}
+
+.productdetalreviws {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.size {
+    padding: 0.4rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 6vw;
+    color: white;
+    font-weight: 900;
+    background-color: black;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    .prod {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .prod img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .pricep {
+        font-size: 1.2rem;
+        gap: 1rem;
+    }
+
+    .size {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .countandcart {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .counter {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .addcart {
+        width: 100%;
+        padding: 1rem;
+    }
+
+
+    .productdetalreviws {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .reviw {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .prod {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .prod img {
+        width: 60vw;
+    }
+
+    .productdetalreviws {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .reviw {
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}

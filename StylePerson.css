@@ -1,0 +1,119 @@
+#carts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+
+
+.stylePerson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: gainsboro;
+    border-radius: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    padding-bottom: 2.5rem;
+
+}
+
+.stylePerson h1 {
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+#carts p {
+    position: absolute;
+    font-weight: bold;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+    font-size: 2vw;
+}
+
+#block1 img {
+    width: 30vw;
+    border-radius: 0.6rem;
+}
+
+
+#block2 img {
+    width: 50vw;
+    border-radius: 0.6rem;
+}
+
+#block3 img {
+    width: 51vw;
+    border-radius: 0.6rem;
+}
+
+#block4 img {
+    width: 28vw;
+    border-radius: 0.6rem;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    .stylePerson {
+        width: 95%;
+        padding: 1.5rem 0.5rem;
+    }
+
+    .stylePerson h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #carts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #block1 img,
+    #block2 img,
+    #block3 img,
+    #block4 img {
+        width: 85vw;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #carts p {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .stylePerson h1 {
+        font-size: 2.2rem;
+    }
+
+    #carts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+
+    #block1 img,
+    #block2 img,
+    #block3 img,
+    #block4 img {
+        width: 40vw;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    #carts p {
+        font-size: 1.5rem;
+    }
+}
